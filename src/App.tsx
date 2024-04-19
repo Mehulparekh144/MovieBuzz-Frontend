@@ -21,7 +21,9 @@ import IndividualProfile from './pages/Profile/Individual';
 
 function App() {
   axios.defaults.baseURL =
-    "http://localhost:4000/api" || process.env.REACT_APP_BACKEND_URL;
+     process.env.REACT_APP_BACKEND_URL ||"http://localhost:4000/api";
+    console.log(process.env.REACT_APP_BACKEND_URL);
+    
   axios.defaults.withCredentials = true;
 
   return (
