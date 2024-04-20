@@ -15,7 +15,7 @@ const Search = () => {
   const getResults = async () => {
     try {
       const res = await fetch(
-        "http://www.omdbapi.com/?apikey=" +
+        "https://www.omdbapi.com/?apikey=" +
           process.env.REACT_APP_API_KEY +
           "&t=" +
           title
