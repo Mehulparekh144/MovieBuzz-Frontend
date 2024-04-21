@@ -20,7 +20,7 @@ export function UserJoined({ u }: { u: any }) {
       });
   };
 
-  const isFollowing = followingList.some(
+  const isFollowing = followingList?.some(
     (followedUser: any) => followedUser._id === u._id
   );
 
