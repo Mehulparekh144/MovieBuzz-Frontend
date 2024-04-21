@@ -19,7 +19,7 @@ export function UserJoined({ u }: { u: any }) {
         return true;
       });
   };
-
+  console.log(followingList)
   const isFollowing = followingList?.some(
     (followedUser: any) => followedUser._id === u._id
   );
